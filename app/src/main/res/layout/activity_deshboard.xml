@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="signUp"
+            type="com.example.nutritionapplication.activity.BMIActivity" />
+    </data>
+
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgsign"
+        tools:context="com.example.nutritionapplication.
+        activity.DeshboardActivity">
+
+        <ImageView
+            android:id="@+id/bmilogo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="28dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/bmi"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bmilogo"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/weight">
+
+            <android.support.design.widget.TextInputEditText
+
+                android:layout_width="288dp"
+                android:layout_height="50dp"
+                android:background="@drawable/bginput"
+                android:hint="Weight(kg)"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:inputType="number"
+                android:textColorHint="#87ffffff"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/height"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/weight">
+
+
+            <android.support.design.widget.TextInputEditText
+
+                android:layout_width="288dp"
+                android:layout_height="50dp"
+                android:background="@drawable/bginput"
+                android:hint="Height(feet)"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:inputType="numberDecimal"
+                android:textColorHint="#87ffffff"/>
+
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/calculate"
+            android:layout_width="168dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/bgbtn"
+            android:text="Calculate"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/height" />
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

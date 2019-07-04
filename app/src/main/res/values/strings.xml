@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">NutritionApp</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="err_msg_password"> Password field required</string>
+    <string name="err_msg_password_length"> Password too Short</string>
+    <string name="err_msg_email"> Email field required</string>
+    <string name="err_msg_valid_email"> It is not valid Email</string>
+    <string name="err_msg_name"> Name field required</string>
+    <string name="err_msg_username"> User Name field required</string>
+    <string name="success">Success</string>
+    <string name="help">Help</string>
+    <string name="info">Info</string>
+    <string name="err">Error</string>
+    <string name="warning">Warning</string>
+    <string name="ok">OK</string>
+</resources>
